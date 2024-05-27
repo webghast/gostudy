@@ -4,6 +4,12 @@ import (
 	"fmt"
 )
 
+type lalo struct {
+	lolo string
+	lili int
+	lulu bool
+}
+
 func main() {
 	x := struct {
 		m map[string]int
@@ -16,4 +22,7 @@ func main() {
 		s: []string{"ola", "oi", "hello"},
 	}
 	fmt.Println(x)
+
+	y := lalo{"ola", 12, true}
+	fmt.Println(y)
 }
