@@ -15,10 +15,10 @@ func mudeMe(p *pessoa) {
 
 func main() {
 	p1 := pessoa{"marquinhos", 16}
-	x := &p1
-	fmt.Println(x)
-	mudeMe(*&x)
 
-	fmt.Println(*&x)
+	fmt.Println(p1)
+	mudeMe(&p1)
+
+	fmt.Println(p1)
 
 }
